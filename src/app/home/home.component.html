@@ -1,0 +1,14 @@
+<div *ngIf="showUserList" class="rounded-md bg-gray-100 p-2 m-12">
+  <ul
+    class="flex flex-row justify-between cursor-pointer border-b-2 p-2 rounded-md"
+    *ngFor="let user of todos"
+    (click)="selectUser(user)"
+  >
+    <li class="flex">{{ user.id }}</li>
+    <li>{{ user.title }}</li>
+    <li>{{ user.completed }}</li>
+  </ul>
+</div>
+<div *ngIf="showUser">
+  <app-user [receiver]="selectedReceiver"></app-user>
+</div>

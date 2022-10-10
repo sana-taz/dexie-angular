@@ -102,5 +102,8 @@
       }
     }
   },
-  "defaultProject": "ang-dexie"
+  "defaultProject": "ang-dexie",
+  "cli": {
+    "analytics": "c118657e-a6ee-4963-aa94-e54d638942b0"
+  }
 }

@@ -10,6 +10,7 @@ export class DexieService {
       .then((response) => response.json())
       .then((json) => {
         todos = json;
+        console.log('json', json);
         return db.todos.bulkPut(todos);
       });
   }

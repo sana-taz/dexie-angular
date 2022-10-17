@@ -1,14 +1,8 @@
 <div class="rounded-md bg-gray-100 p-2 m-12">
   <ul class="flex felx-row justify-between">
-    <li class="flex">{{ receiver.id }}</li>
-    <li>{{ receiver.title }}</li>
-    <li>{{ receiver.completed }}</li>
-    <li
-      class="cursor-pointer bg-orange-200 px-4 py-1 rounded-md"
-      (click)="update(item)"
-    >
-      edit
-    </li>
+    <li class="flex">{{ item.id }}</li>
+    <li>{{ item.title }}</li>
+    <li>{{ item.completed }}</li>
+    <li class="cursor-pointer bg-orange-200 px-4 py-1 rounded-md">edit</li>
   </ul>
-  <!-- {{ item | json }} -->
 </div>

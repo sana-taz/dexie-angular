@@ -15,6 +15,7 @@ export class HomeComponent implements OnInit {
   constructor(private ds: DexieService) {}
 
   ngOnInit(): void {
+    this.ds.getAllTodos();
     this.getData();
   }
   getData() {
